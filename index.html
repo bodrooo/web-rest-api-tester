@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Console For Development -->
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+      eruda.init();
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>test</title>
+  </head>
+  <body>
+    <div class="container">
+        <div id="spinner" class="spinner">
+          <div class="spinner-dot"></div>
+          <div class="spinner-dot"></div>
+          <div class="spinner-dot"></div>
+          <div class="spinner-dot"></div>
+        </div>
+
+      <div class="input">
+        <input
+          type="search"
+          name="base-url"
+          id="base-url"
+          placeholder="base url"
+          value="https://jsonplaceholder.typicode.com"
+        />
+        <input
+          type="search"
+          name="route-url"
+          id="route-url"
+          placeholder="route"
+          value="/users"
+        />
+        <button type="button" id="send">Send~</button>
+      </div>
+      
+      <div id="json"></div>
+    </div>
+    <script src="./src/js/main.js" type="module"></script>
+  </body>
+</html>
